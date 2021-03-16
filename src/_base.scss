@@ -112,7 +112,6 @@ label:hover > span:nth-child(2) {
 }
 /*-------------- ASIDE -------------*/
 aside {
-    background-color: rgb(240, 230, 220);
     width: 100%;
     max-height: 0;
     overflow: auto;
@@ -153,26 +152,32 @@ aside {
     color: #000;
     width: 30px;
     font-size: 2em;
+    margin: 3px 10px;
 }
 .br-display-none {
     display: none;
 }
 .contact-box {
     text-align: center;
-    width: 65%;
+    width: 80%;
     background-color: rgb(201, 172, 156);
     padding: 10px;
-    box-shadow: 0px 0px 6px 1px #ffffff;
-    margin: 30px auto 0px auto;
+    margin: 1px;
+    box-shadow: 0px 0px 3px 1px #e9e1d7;
 
     h3 {
-        margin-top: -10px;
-        margin-bottom: 5px;
+        margin-bottom: 10px;
         text-shadow: 0px 0px 2px #dfd6d1;
     }
     h4 {
         margin-top: 10px;
     }
+}
+.aside-profile {
+    background-color: rgb(240, 230, 220);
+    width: 80%;
+    margin-top: 10%;
+    box-shadow: 0px 0px 3px 1px #e9e1d7;
 }
 /*-------------- MAINSECTION -------------*/
 section {
