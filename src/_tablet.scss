@@ -15,7 +15,7 @@ h2 {
     height: 50px;
     display: flex;
     list-style: none;
-    margin: 7% 0px;
+    margin: 50px 0px;
     padding: 0px;
 }
 .main-nav-li {
@@ -30,12 +30,15 @@ h2 {
 }
 .main-nav-li:hover {
     cursor: pointer;
-    background-color: rgba(201, 172, 156, 0.728);
+    color: #fff;
+    background-color: rgba(114, 101, 92, 0.728);
 }
+
 /*-------------- MAIN -------------*/
 main {
     display: flex;
 }
+
 /*----------- MAINSECTION ----------*/
 article {
     h3 {
@@ -46,11 +49,13 @@ article {
         font-size: 15px;
     }
 }
+
 /*------------- ASIDE ---------------*/
 aside {
     display: block;
     max-height: 100%;
     min-width: 35%;
+    margin-right: 20px;
     width: 35%;
 
     h3 {
@@ -67,6 +72,10 @@ aside {
         text-align: center;
         font-size: 11px;
     }
+}
+.fab {
+    width: 25px;
+    margin: 3px 6px;
 }
 .br-display-none {
     display: block;

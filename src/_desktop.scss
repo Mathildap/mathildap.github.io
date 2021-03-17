@@ -7,26 +7,10 @@ h1 {
 h2 {
     font-size: 30px;
 }
-/*--------- MAINSECTION ---------*/
-article {
-    margin: 40px 20px 0px 20px;
-    h3 {
-        font-size: 25px;
-    }
-    h4 {
-        font-size: 18px;
-    }
-}
-.text-shadow {
-    width: 350px;
-    margin-top: -35px;
-}
+
 /*----------- ASIDE -----------*/
 input {
     display: none;
-}
-#menu-toggle:checked + aside {
-    max-width: 30%;
 }
 aside {
     max-width: 35%;
@@ -38,4 +22,21 @@ aside {
     p {
         font-size: 14px;
     }
+}
+
+/*--------- MAINSECTION ---------*/
+article {
+    margin: 40px 20px 0px 20px;
+    h3 {
+        font-size: 25px;
+        z-index: 3;
+    }
+    h4 {
+        font-size: 18px;
+    }
+}
+.text-shadow {
+    width: 350px;
+    margin-top: -35px;
+    z-index: 2;
 }
