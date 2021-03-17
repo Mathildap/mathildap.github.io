@@ -41,6 +41,10 @@ main {
 }
 
 /*----------- MAINSECTION ----------*/
+.main-section {
+    position: relative;
+    text-align: center;
+}
 article {
     h3 {
         font-size: 20px;
@@ -50,7 +54,13 @@ article {
         font-size: 15px;
     }
 }
-
+.contact-page {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.contact-page_box {
+    height: 200px;
+}
 /*------------- ASIDE ---------------*/
 aside {
     display: block;

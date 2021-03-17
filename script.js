@@ -4,6 +4,7 @@ printStartpage();
 
 function printStartpage(id) {
     console.log("skriv ut startsida");
+        main.style.backgroundColor = "#f3edea";
         main.innerHTML = `
         <article>
             <h3>Profil</h3>
@@ -29,6 +30,7 @@ function printStartpage(id) {
 
 function printPortfolio() {
     console.log("skriv ut portfolio");
+    main.style.backgroundColor = "#f3edea";
     main.innerHTML = `
     <article>
         <h3>Portfolio</h3>
@@ -41,6 +43,7 @@ function printPortfolio() {
 
 function printExperience() {
     console.log("skriv ut erfarenhet");
+    main.style.backgroundColor = "#f3edea";
     main.innerHTML = `
     <article>
     <h3>Utbildning</h3>
@@ -77,11 +80,47 @@ function printExperience() {
 
 function printContact() {
     console.log("skriv ut kontakt");
+    main.style.backgroundColor = "rgba(255, 255, 255, 0.5)";
+    main.style.border = "1px solid rgba(255,255,255,0.4)"
     main.innerHTML = `
     <article>
         <h3>Kontakt</h3>
         <span class="text-shadow"> </span>
-        <p>Mathilda.pettersson@medieinstitutet.se</p>
+    </article>
+    <article class="contact-page">
+
+        <a href="mailto:mathilda.pettersson@medieinstitutet.se" target="_blank" class="contact-page_link">
+        <div class="contact-page_box">
+            <h4>E-post</h4>
+            <i class="contact-icon fab fas fa-envelope"></i>
+            <p>Mathilda.pettersson<br>@medieinstitutet.se</p>
+        </div>
+        </a>
+
+        <a href="https://www.linkedin.com/in/mathilda-pettersson-087a241b5/" target="_blank" class="contact-page_link">
+        <div class="contact-page_box">
+            <h4>LinkedIn</h4>
+            <i class="contact-icon fab fa-linkedin"></i>
+            <p>Mathilda Pettersson</p>
+        </div>
+        </a>
+
+        <a href="https://www.instagram.com/mathildap/" target="_blank" class="contact-page_link">
+        <div class="contact-page_box">
+            <h4>Instagram</h4>
+            <i class="contact-icon fab fa-instagram"></i>
+            <p>Mathildap</p>
+        </div>
+        </a>
+
+        <a href="https://github.com/Mathildap" target="_blank" class="contact-page_link">
+        <div class="contact-page_box">
+            <h4>Github</h4>
+            <i class='fab fa-github'></i>
+            <p>Mathildap</p>
+        </div>
+        </a>
+    </article>
     `
 };
 

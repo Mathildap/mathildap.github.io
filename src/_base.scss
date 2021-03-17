@@ -208,6 +208,36 @@ section {
     display: block;
     z-index: -1;
 }
+.contact-page_box {
+    margin: 20px;
+    text-align: center;
+    border: 1px solid rgba(255,255,255,0.4);
+    border-right: 1px solid rgba(255,255,255,0.2);
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+    box-shadow: 0px 5px 10px #664c3a59;
+    border-radius: 5px;
+    background-color: rgba(219, 209, 199, 0.932);
+    transition: all 0.2s linear;
+}
+.contact-page_box:hover {
+    background-color: rgba(255, 255, 255, 0.534);
+    box-shadow: 0px 5px 10px #a19284;
+    color: #978c7e;
+    text-shadow: 0px 0px 3px #b19f99;
+    transform: translateY(-5px);
+}
+.contact-page_link {
+    text-decoration: none;
+    color: #292727;
+    font-size: 1.2em;
+    letter-spacing: 1px;
+    transition: all 0.2s linear;
+}
+.contact-page_link:hover .fab {
+    color: #ffffff;
+    text-shadow: 0px 1px 3px #8d857b;
+    transform: translateY(0px);
+}
 /*-------------- FOOTER -------------*/
 footer {
     font-family: $h-fonts;
