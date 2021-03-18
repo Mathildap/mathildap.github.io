@@ -9,7 +9,12 @@ function printStartpage(id) {
         <article>
             <h3>Profil</h3>
             <span class="text-shadow"> </span>
-            <p>Jag utbildar mig just nu till frontend-utvecklare efter 10 år på HM, senast som visual merchandiser. Jag kastar mig in i en ny branch nu och är hungrig på ny kunskap inom frontend, programering och nya arbetssätt! Jag gillar design, färg och form och har intresse för inredning på fritiden.</p>
+            <div class="background-start">
+            <p>Välkommen till min sida, jag heter Mathilda, är 28år och utbildar mig just nu till frontend-utvecklare. Har senaste 10 åren jobbat på HM, största del i butik, senast som visual merchandiser, men en del resande har jag också hunnit med. Jag kastar mig nu in i en ny branch är än så länge säkert på att det är detta jag jobba med! Jag är hungrig på ny kunskap inom frontend och programering och allt där till. Jag gillar design, färg och form och har intresse för inredning på fritiden.
+            <br>
+            <br>
+            Våren 2021 kommer jag ge mig ut på LIA och söker just nu en plats, skulle ditt företag vara intresserade så hör gärna av er!</p>
+            </div>
         </article>
        
     </section>`
@@ -22,7 +27,7 @@ function printPortfolio() {
     <article>
         <h3>Portfolio</h3>
         <span class="text-shadow"> </span>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque, deserunt odit sapiente, cum possimus itaque quod explicabo nisi excepturi animi qui sunt obcaecati nemo dolore eligendi veritatis repellendus consequuntur? Dignissimos!
+        <p>Här kommer jag lägga upp mina projekt, både mina egna och skolarbeten. Vissa pågående och en del slutförda!
         <p>
         <article>
         <h3>Github</h3>
@@ -31,12 +36,18 @@ function printPortfolio() {
         </article>
 
         <div class="portfolio-github-container">
-            <article class="github-box">
+            <article class="github-box repo1">
                 <p id="repo1"></p>
             </article>
-            <article class="github-box">Hej</article>
-            <article class="github-box">Hej</article>
-            <article class="github-box">Hej</article>
+            <article class="github-box repo2">
+                <p id="repo2"></p>
+            </article>
+            <article class="github-box repo3">
+                <p id="repo3"></p>
+            </article>
+            <article class="github-box repo4">
+                <p id="repo4"></p>
+            </article>
         </div>
     </article>
     </section>
@@ -44,9 +55,15 @@ function printPortfolio() {
     fetch("https://api.github.com/users/Mathildap/repos")
     .then(response => response.json())
     .then(data => {
+        console.log(data);
 
-        document.getElementById("repo1").insertAdjacentHTML("beforeend", "<i class='fab fa-github gh'></i>" + "<a target='_blank' class='github' href='"+ data[1].html_url +"'>" + "To-do List" + "</a>");
+        document.getElementById("repo1").insertAdjacentHTML("beforeend", "<a target='_blank' class='github' href='"+ data[1].html_url +"'>" + "Mathildap - Hemsida" + "</a>");
 
+        document.getElementById("repo2").insertAdjacentHTML("beforeend", "<a target='_blank' class='github' href='"+ data[2].html_url +"'>" + "Sten, sax, påse - Spel" + "</a>");
+
+        document.getElementById("repo3").insertAdjacentHTML("beforeend", "<a target='_blank' class='github' href='"+ data[3].html_url +"'>" + "To-do List" + "</a>");
+
+        document.getElementById("repo4").insertAdjacentHTML("beforeend", "Fler påväg..");
     });
 };
 

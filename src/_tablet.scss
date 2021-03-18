@@ -43,7 +43,6 @@ main {
 /*----------- MAINSECTION ----------*/
 .main-section {
     position: relative;
-    text-align: center;
 }
 article {
     h3 {
@@ -54,6 +53,16 @@ article {
         font-size: 15px;
     }
 }
+
+/*----------- PORTFOLIO PAGE ----------*/
+.portfolio-github-container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.github-box {
+    opacity: 0.8;
+}
+/*----------- CONTACT PAGE ----------*/
 .contact-page {
     display: grid;
     grid-template-columns: 50% 50%;

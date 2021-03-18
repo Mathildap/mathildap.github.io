@@ -4,16 +4,13 @@ $h-fonts: 'Nanum Myeongjo', 'Goudy Old Style', serif;
 
 body {
     margin: 0px;
+    padding: 0px;
     background-image: url("../img/city-bg.jpg"); // Foto av Ricardo Esquivel från Pexels
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    box-sizing: border-box;
 }
-.start-container {
-    background-color: rgba(255, 255, 255, 0.5);
-    border: 1px solid rgba(255,255,255,0.4);
-}
-
 .experience-container {
     background-color: rgba(255, 255, 255, 0.5);
     border: 1px solid rgba(255,255,255,0.4);
@@ -186,6 +183,9 @@ aside {
     box-shadow: 0px 0px 3px 1px #e9e1d7;
     margin: 3px;
 }
+li::marker {
+    color: #746964;
+}
 /*-------------- MAINSECTION -------------*/
 .content, .aside-profile {
     padding: 5px 15px;
@@ -198,7 +198,8 @@ aside {
     }
     p {
         font-size: 14px;
-        margin-top: 3px;
+        margin: 5px;
+        padding: 5px;
         font-family: Montserrat, 'Lucida sans', sans-serif;
         line-height: 1.5;
     }
@@ -216,19 +217,44 @@ aside {
     display: block;
     z-index: -1;
 }
+
+/*-------------- START PAGE -------------*/
+.start-container {
+    background-color: rgba(255, 255, 255, 0.5);
+    border: 1px solid rgba(255,255,255,0.4);
+    height: 100%;
+}
+.background-start {
+    width: 90%;
+    background-color: #f4f0ec;
+    margin: 10px auto;
+    margin-bottom: 10px;
+    padding: 15px;
+}
 /*-------------- PORTFOLIO PAGE -------------*/
 .portfolio-container {
     background-color: rgba(255, 255, 255, 0.5);
     border: 1px solid rgba(255,255,255,0.4);
 }
-.portfolio-github-container {
-    display: flex;
-}
 .github-box {
     background-color: #e8d9d9;
-    width: 45%;
-    height: 100px;
+    height: 300px;
     margin: 10px;
+}
+.repo1 {
+    background-image: url("../img/mathildap-github.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.repo2 {
+    background-image: url("../img/sten-sax-pase.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.repo3 {
+    background-image: url("../img/to-do-list.jpg");
+    background-size: cover;
+    background-position: center;
 }
 /*-------------- CONTACT PAGE -------------*/
 .contact-page_box {
@@ -271,14 +297,16 @@ footer {
     color: white;
     text-shadow: 1px 1px 1px #524e48;
     letter-spacing: 1.5px;
-    text-align: center;
-    clear: none;
     background-color: rgb(186, 170, 161);
     margin: 0px;
-    padding: 5px;
     bottom: 0;
     width: 100%;
+    height: 40px;
     z-index: 3;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .github {
     color: #79756d;
