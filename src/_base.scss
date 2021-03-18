@@ -9,7 +9,15 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
+.start-container {
+    background-color: rgba(255, 255, 255, 0.5);
+    border: 1px solid rgba(255,255,255,0.4);
+}
 
+.experience-container {
+    background-color: rgba(255, 255, 255, 0.5);
+    border: 1px solid rgba(255,255,255,0.4);
+}
 /*-------------- HEADER --------------*/
 header {
     width: 80%;
@@ -94,6 +102,7 @@ label:hover > span:nth-child(2) {
     display: none;
     background-color: rgb(240, 230, 220);
     margin: 0;
+    margin-bottom: -3px;
     padding: 0;
     list-style: none;
 }
@@ -178,7 +187,7 @@ aside {
     margin: 3px;
 }
 /*-------------- MAINSECTION -------------*/
-section {
+.content, .aside-profile {
     padding: 5px 15px;
     h4 {
         font-weight: 400;
@@ -195,7 +204,6 @@ section {
     }
 }
 .main-section {
-    background-color: #f3edea;
     width: 100%;
     margin: 3px;
 }
@@ -208,6 +216,21 @@ section {
     display: block;
     z-index: -1;
 }
+/*-------------- PORTFOLIO PAGE -------------*/
+.portfolio-container {
+    background-color: rgba(255, 255, 255, 0.5);
+    border: 1px solid rgba(255,255,255,0.4);
+}
+.portfolio-github-container {
+    display: flex;
+}
+.github-box {
+    background-color: #e8d9d9;
+    width: 45%;
+    height: 100px;
+    margin: 10px;
+}
+/*-------------- CONTACT PAGE -------------*/
 .contact-page_box {
     margin: 20px;
     text-align: center;
@@ -237,6 +260,10 @@ section {
     color: #ffffff;
     text-shadow: 0px 1px 3px #8d857b;
     transform: translateY(0px);
+}
+.contact-container {
+    background-color: rgba(255, 255, 255, 0.5);
+    border: 1px solid rgba(255,255,255,0.4);
 }
 /*-------------- FOOTER -------------*/
 footer {
