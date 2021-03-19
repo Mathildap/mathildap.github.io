@@ -22,6 +22,11 @@ function printStartpage(id) {
 
 function printPortfolio() {
     console.log("skriv ut portfolio");
+
+    fetch("https://api.github.com/users/Mathildap/repos")
+    .then(response => response.json())
+    .then(data => {
+
     main.innerHTML = `
     <section class="portfolio-container">
     <article>
@@ -36,42 +41,58 @@ function printPortfolio() {
         </article>
 
         <div class="portfolio-github-container">
-            <article class="github-box repo1">
-                <p id="repo1"></p>
-                <p class="repo-descrip"></p>
+        
+        <a target='_blank' class='github' href=${data[1].html_url}>
+            <article class="github-box">
+                <div class="github-img-box">
+                    <div class="github-repo1_img"></div>
+                    <p id="repo1"></p>
+                </div>
+                <div class="github-repo-text">
+                    <p class="repo-descrip">Mathildap - Website</p>
+                </div>
             </article>
-            <article class="github-box repo2">
-                <p id="repo2"></p>
-                <p class="repo-descrip"></p>
+        </a>
+
+        <a target='_blank' class='github' href=${data[2].html_url}>
+            <article class="github-box">
+                <div class="github-img-box">
+                    <div class="github-repo2_img"></div>
+                    <p id="repo2"></p>
+                </div>
+                <div class="github-repo-text">
+                    <p class="repo-descrip">Sten, sax, påse - Spel</p>
+                </div>
             </article>
-            <article class="github-box repo3">
-                <p id="repo3"></p>
-                <p class="repo-descrip"></p>
+        </a>
+
+        <a target='_blank' class='github' href=${data[3].html_url}>
+            <article class="github-box">
+                <div class="github-img-box">
+                    <div class="github-repo3_img"></div>
+                    <p id="repo3"></p>
+                </div>
+                <div class="github-repo-text">
+                    <p class="repo-descrip">To-do List</p>
+                </div>
             </article>
-            <article class="github-box repo4">
-                <p id="repo4"></p>
-                <p class="repo-descrip"></p>
+        </a>
+
+            <article class="github-box">
+                <div class="github-img-box">
+                    <div class="github-repo4_img"></div>
+                    <p id="repo4"></p>
+                </div>
+                <div class="github-repo-text">
+                    <p class="repo-descrip">Fler projekt kommer..</p>
+                </div>
             </article>
         </div>
     </article>
     </section>
     `
-    fetch("https://api.github.com/users/Mathildap/repos")
-    .then(response => response.json())
-    .then(data => {
-        console.log(data);
-
-        document.getElementById("repo1").insertAdjacentHTML("beforeend", "<a target='_blank' class='github' href='"+ data[1].html_url +"'>" + "Mathildap - Hemsida" + "</a>");
-
-        document.getElementById("repo2").insertAdjacentHTML("beforeend", `<a target='_blank' class='github' href='"+ data[2].html_url +"'>" + "Sten, sax, påse - Spel" + "</a>`);
-
-        document.getElementById("repo3").insertAdjacentHTML("beforeend", "<a target='_blank' class='github' href='"+ data[3].html_url +"'>" + "To-do List" + "</a>");
-
-        document.getElementById("repo4").insertAdjacentHTML("beforeend", "Fler är påväg..");
     });
 };
-
-
 
 function printExperience() {
     console.log("skriv ut erfarenhet");
@@ -80,6 +101,7 @@ function printExperience() {
     <article>
     <h3>Utbildning</h3>
     <span class="text-shadow"> </span>
+    <div class="experience-text">
     <h4>Front End developer, Medieinstitutet ⎮ 12/2020 - pågående (2022)</h4>
     <p>
       Slutförd kurs är Html/CSS där vi jobbat med bl.a. webbdesign, sökoptimering, tillgänglighet och responsivitet.<br>
@@ -90,10 +112,12 @@ function printExperience() {
     <p>
       Pluggade handels med inriktning försäljning och entreprenörskap. Drev mitt egna UF-företag och gick kurser inom marknadsföring, försäljning, webbdesign och företagande.
     </p>
+    </div>
   </article>
   <article>
     <h3>Arbetserfarenhet</h3>
     <span class="text-shadow"> </span>
+    <div class="experience-text">
     <h4>H&M ⎮ 2012 - 2020</h4>
     <p>
       Tjänster: Visual merchandiser, Ställföreträdande butikschef och säljare. <br>
@@ -106,6 +130,7 @@ function printExperience() {
     Lärkbacksskolan: Lärarvikarie, låg- och mellanstadie. <br>
     Johanssons Café. 
     </p>
+    </div>
   </article>
   </section>
   `
