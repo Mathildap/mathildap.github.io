@@ -28,7 +28,7 @@ function printPortfolio() {
         <h3>Portfolio</h3>
         <span class="text-shadow"> </span>
         <p>Här kommer jag lägga upp mina projekt, både mina egna och skolarbeten. Vissa pågående och en del slutförda!
-        <p>
+        </p>
         <article>
         <h3>Github</h3>
         <span class="text-shadow"> </span>
@@ -38,15 +38,19 @@ function printPortfolio() {
         <div class="portfolio-github-container">
             <article class="github-box repo1">
                 <p id="repo1"></p>
+                <p class="repo-descrip"></p>
             </article>
             <article class="github-box repo2">
                 <p id="repo2"></p>
+                <p class="repo-descrip"></p>
             </article>
             <article class="github-box repo3">
                 <p id="repo3"></p>
+                <p class="repo-descrip"></p>
             </article>
             <article class="github-box repo4">
                 <p id="repo4"></p>
+                <p class="repo-descrip"></p>
             </article>
         </div>
     </article>
@@ -59,11 +63,11 @@ function printPortfolio() {
 
         document.getElementById("repo1").insertAdjacentHTML("beforeend", "<a target='_blank' class='github' href='"+ data[1].html_url +"'>" + "Mathildap - Hemsida" + "</a>");
 
-        document.getElementById("repo2").insertAdjacentHTML("beforeend", "<a target='_blank' class='github' href='"+ data[2].html_url +"'>" + "Sten, sax, påse - Spel" + "</a>");
+        document.getElementById("repo2").insertAdjacentHTML("beforeend", `<a target='_blank' class='github' href='"+ data[2].html_url +"'>" + "Sten, sax, påse - Spel" + "</a>`);
 
         document.getElementById("repo3").insertAdjacentHTML("beforeend", "<a target='_blank' class='github' href='"+ data[3].html_url +"'>" + "To-do List" + "</a>");
 
-        document.getElementById("repo4").insertAdjacentHTML("beforeend", "Fler påväg..");
+        document.getElementById("repo4").insertAdjacentHTML("beforeend", "Fler är påväg..");
     });
 };
 

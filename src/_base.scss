@@ -15,6 +15,7 @@ body {
     background-color: rgba(255, 255, 255, 0.5);
     border: 1px solid rgba(255,255,255,0.4);
 }
+
 /*-------------- HEADER --------------*/
 header {
     width: 80%;
@@ -119,6 +120,7 @@ label:hover > span:nth-child(2) {
 input {
     display: none;
 }
+
 /*-------------- ASIDE -------------*/
 aside {
     width: 100%;
@@ -186,6 +188,7 @@ aside {
 li::marker {
     color: #746964;
 }
+
 /*-------------- MAINSECTION -------------*/
 .content, .aside-profile {
     padding: 5px 15px;
@@ -231,15 +234,26 @@ li::marker {
     margin-bottom: 10px;
     padding: 15px;
 }
+
 /*-------------- PORTFOLIO PAGE -------------*/
 .portfolio-container {
     background-color: rgba(255, 255, 255, 0.5);
     border: 1px solid rgba(255,255,255,0.4);
 }
 .github-box {
-    background-color: #e8d9d9;
+    font-size: 20px;
     height: 300px;
     margin: 10px;
+    overflow: hidden;
+    box-shadow: 0px 5px 10px #664c3a59;
+    border: 1px solid rgba(255,255,255,0.4);
+    opacity: 0.9;
+     transition: transform 1s, filter 2s ease;
+    &:hover {
+        filter: blur(3px);
+        transform: scale(1.1);
+        overflow: hidden;
+    }
 }
 .repo1 {
     background-image: url("../img/mathildap-github.jpg");
@@ -256,6 +270,7 @@ li::marker {
     background-size: cover;
     background-position: center;
 }
+
 /*-------------- CONTACT PAGE -------------*/
 .contact-page_box {
     margin: 20px;
@@ -291,6 +306,7 @@ li::marker {
     background-color: rgba(255, 255, 255, 0.5);
     border: 1px solid rgba(255,255,255,0.4);
 }
+
 /*-------------- FOOTER -------------*/
 footer {
     font-family: $h-fonts;
