@@ -108,9 +108,11 @@ label:hover > span:nth-child(2) {
     padding: 10px;
     text-align: center;
     text-transform: uppercase;
+    // color: #fff;
     font-family: $h-fonts;
     letter-spacing: 2px;
     transition: all 0.3s linear;
+    text-decoration: none;
 }
 .main-nav-li:hover {
     cursor: pointer;

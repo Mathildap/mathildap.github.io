@@ -16,7 +16,6 @@ function printStartpage(id) {
             Våren 2022 kommer jag ge mig ut på LIA och söker just nu en plats, skulle ditt företag vara intresserade så hör gärna av er!</p>
             </div>
         </article>
-       
     </section>`
 };
 
