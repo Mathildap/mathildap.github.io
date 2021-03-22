@@ -150,7 +150,7 @@ function printContact() {
         <div class="contact-page_box">
             <h4>E-post</h4>
             <i class="contact-icon fab fas fa-envelope"></i>
-            <p>Mathilda.pettersson<br>@medieinstitutet.se</p>
+            <p class="email-link">Mathilda.pettersson<br>@medieinstitutet.se</p>
         </div>
         </a>
 

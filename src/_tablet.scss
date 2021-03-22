@@ -53,13 +53,24 @@ article {
         font-size: 15px;
     }
 }
-
+.text-shadow {
+    width: 300px;
+}
+.content {
+    width: 85%;
+}
+/*----------- START PAGE ----------*/
+.background-start, .experience-text {
+    width: 90%;
+}
 /*----------- PORTFOLIO PAGE ----------*/
 .portfolio-github-container {
     display: grid;
     grid-template-columns: 50% 50%;
 }
-
+.github-img-box {
+    height: 200px;
+}
 /*----------- CONTACT PAGE ----------*/
 .contact-page {
     display: grid;

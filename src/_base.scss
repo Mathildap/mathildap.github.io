@@ -36,19 +36,19 @@ h1 {
 }
 h2 {
     font-size: 1em;
-    margin-top: 5px;
+    margin-top: 10px;
     text-shadow: 1px 1px 1px #524e48;
 }
 
 /*-------------- MAIN CONTENT --------------*/
 .content {
-    width: 80%;
+    width: 86%;
     margin: 7% auto;
     padding: 0;
 }
 h3 {
     font-family: $h-fonts;
-    font-size: 1.2em;
+    font-size: 1.1em;
     font-weight: 800;
     text-align: center;
     text-transform: uppercase;
@@ -212,7 +212,7 @@ li::marker {
     margin: 3px;
 }
 .text-shadow {
-    width: 300px;
+    width: 275px;
     height: 15px;
     margin: -30px auto 15px auto;
     background-color: rgb(212, 200, 187);
@@ -228,7 +228,7 @@ li::marker {
     height: 100%;
 }
 .background-start, .experience-text {
-    width: 95%;
+    width: 90%;
     background-color: #f5f1ee;
     margin: 6px auto;
     margin-bottom: 10px;
