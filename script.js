@@ -25,6 +25,7 @@ function printPortfolio() {
     fetch("https://api.github.com/users/Mathildap/repos")
     .then(response => response.json())
     .then(data => {
+    console.log(data);
 
     main.innerHTML = `
     <section class="portfolio-container">
@@ -77,15 +78,17 @@ function printPortfolio() {
             </article>
         </a>
 
+        <a target='_blank' class='github' href=${data[5].html_url}>
             <article class="github-box">
                 <div class="github-img-box">
-                    <div class="github-repo4_img"></div>
-                    <p id="repo4"></p>
+                    <div class="github-repo5_img"></div>
+                    <p id="repo5"></p>
                 </div>
                 <div class="github-repo-text">
-                    <p class="repo-descrip">Fler projekt kommer..</p>
+                    <p class="repo-descrip">Webshop och login-sida</p>
                 </div>
             </article>
+        </a>
         </div>
     </article>
     </section>
