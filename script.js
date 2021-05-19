@@ -3,7 +3,6 @@ const main = document.querySelector(".main-section");
 printStartpage();
 
 function printStartpage(id) {
-    console.log("skriv ut startsida");
     main.innerHTML = `
     <section class="start-container">
         <article>
@@ -20,8 +19,6 @@ function printStartpage(id) {
 };
 
 function printPortfolio() {
-    console.log("skriv ut portfolio");
-
     fetch("https://api.github.com/users/Mathildap/repos")
     .then(response => response.json())
     .then(data => {
@@ -42,7 +39,7 @@ function printPortfolio() {
 
         <div class="portfolio-github-container">
         
-        <a target='_blank' class='github' href=${data[1].html_url}>
+        <a target='_blank' class='github' href=${data[10].html_url}>
             <article class="github-box">
                 <div class="github-img-box">
                     <div class="github-repo1_img"></div>
@@ -54,7 +51,7 @@ function printPortfolio() {
             </article>
         </a>
 
-        <a target='_blank' class='github' href=${data[2].html_url}>
+        <a target='_blank' class='github' href=${data[12].html_url}>
             <article class="github-box">
                 <div class="github-img-box">
                     <div class="github-repo2_img"></div>
@@ -66,7 +63,7 @@ function printPortfolio() {
             </article>
         </a>
 
-        <a target='_blank' class='github' href=${data[3].html_url}>
+        <a target='_blank' class='github' href=${data[13].html_url}>
             <article class="github-box">
                 <div class="github-img-box">
                     <div class="github-repo3_img"></div>
@@ -78,7 +75,7 @@ function printPortfolio() {
             </article>
         </a>
 
-        <a target='_blank' class='github' href=${data[5].html_url}>
+        <a target='_blank' class='github' href=${data[15].html_url}>
             <article class="github-box">
                 <div class="github-img-box">
                     <div class="github-repo5_img"></div>
@@ -86,6 +83,18 @@ function printPortfolio() {
                 </div>
                 <div class="github-repo-text">
                     <p class="repo-descrip">Webshop och login-sida</p>
+                </div>
+            </article>
+        </a>
+
+        <a target='_blank' class='github' href=${data[5].html_url}>
+            <article class="github-box">
+                <div class="github-img-box">
+                    <div class="github-repo6_img"></div>
+                    <p id="repo6"></p>
+                </div>
+                <div class="github-repo-text">
+                    <p class="repo-descrip">Lets Talk - Chat</p>
                 </div>
             </article>
         </a>
